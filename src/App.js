@@ -20,6 +20,8 @@ function App() {
     libraries: ["places"],
   });
 
+
+
   const myIcon = L.icon({
     iconUrl: './components/icon.png',
     iconSize: [50, 50],
@@ -27,8 +29,9 @@ function App() {
     popupAnchor: [0, -50]
   });
   
-  //  const marker = L.marker([51.5, -0.09], { icon: myIcon }).addTo(map);
+  // const marker = L.marker([51.5, -0.09], { icon: myIcon }).addTo(map);
   // marker.bindPopup("<b>Hello world!</b><br>I am a custom marker.");
+
 
   useEffect(() => {
     fetch(
